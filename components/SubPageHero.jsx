@@ -8,7 +8,7 @@ export default function SubPageHero({ label, heading, subheading }) {
   return (
     <section className="relative overflow-hidden bg-brand" style={{ paddingTop: '12rem', paddingBottom: '6rem' }}>
       <div className="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" alt="Commercial trucking fleet on highway" className="absolute inset-0 w-full h-full object-cover" style={{ opacity: 0.35, objectPosition: '50% 30%' }} />
+        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" alt="Commercial trucking fleet on highway" width={1920} height={600} className="absolute inset-0 w-full h-full object-cover" style={{ opacity: 0.35, objectPosition: '50% 30%' }} />
         <div className="absolute inset-0 bg-brand" style={{ opacity: 0.6 }} />
       </div>
       <div className="relative max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
