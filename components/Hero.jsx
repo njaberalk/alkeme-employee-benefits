@@ -38,9 +38,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative">
         <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
-          <p className="absolute" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', borderWidth: 0 }}>
-            ALKEME Insurance Services provides employee benefits including group health, dental, vision, retirement plans, and compliance support for employers in all 50 states.
-          </p>
           <h1
             className="font-extrabold tracking-tight mb-6"
             style={{
@@ -70,7 +67,7 @@ export default function Hero() {
               transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
             }}
           >
-            Employee benefits for employers of all sizes. We handle group health, dental, vision, retirement, and compliance — across all 50 states.
+            We help employers build better benefits programs. Our team handles group health, dental, vision, and retirement plans. We serve businesses of all sizes in all 50 states.
           </p>
 
           <p
@@ -84,7 +81,7 @@ export default function Hero() {
               transition: 'opacity 0.6s ease 0.38s, transform 0.6s ease 0.38s',
             }}
           >
-            ALKEME Insurance Services provides employee benefits consulting including group health insurance, dental, vision, life and disability coverage, retirement plans, and compliance administration for employers of all sizes across all 50 states.
+            ALKEME is a licensed insurance broker. We offer employee benefits such as group health, dental, vision, and retirement plans. We serve employers in every state.
           </p>
 
           <div
