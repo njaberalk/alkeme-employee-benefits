@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "employee-benefits-dev",
+      "runtimeExecutable": "C:/Users/NicholasJaber/.fnm/node-versions/v24.14.1/installation/node.exe",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
+      "port": 3000
+    }
+  ]
+}

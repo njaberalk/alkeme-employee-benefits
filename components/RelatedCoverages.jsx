@@ -4,18 +4,19 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 // Basic coverage metadata for cross-linking
 const allCoverages = {
-  'auto-liability': { title: 'Primary Auto Liability', desc: 'Liability protection for at-fault accidents' },
-  'physical-damage': { title: 'Physical Damage', desc: 'Covers repair or replacement of your vehicles' },
-  'motor-truck-cargo': { title: 'Motor Truck Cargo', desc: 'Protects goods in transit' },
-  'general-liability': { title: 'General Liability', desc: 'Third-party claims outside vehicle operation' },
-  'non-trucking-liability': { title: 'Non-Trucking Liability', desc: 'Coverage for personal use of truck' },
-  'trailer-interchange': { title: 'Trailer Interchange', desc: 'Covers trailers under interchange agreements' },
-  'workers-compensation': { title: 'Workers\' Compensation', desc: 'Employee injury wage and medical benefits' },
-  'umbrella-excess-liability': { title: 'Umbrella / Excess', desc: 'Additional liability protection layer' },
-  'occupational-accident': { title: 'Occupational Accident', desc: 'Coverage for independent contractors' },
+  'group-health-insurance': { title: 'Group Health Insurance', desc: 'Employer-sponsored medical coverage' },
+  'dental-insurance': { title: 'Dental Insurance', desc: 'Preventive, basic, and major dental plans' },
+  'vision-insurance': { title: 'Vision Insurance', desc: 'Eye exams, frames, and contacts coverage' },
+  'life-insurance': { title: 'Life Insurance', desc: 'Group term life and AD&D benefits' },
+  'disability-insurance': { title: 'Disability Insurance', desc: 'Short-term and long-term disability coverage' },
+  'retirement-plans': { title: 'Retirement Plans', desc: '401(k), 403(b), and profit sharing plans' },
+  'executive-benefits': { title: 'Executive Benefits', desc: 'Deferred compensation and SERP programs' },
+  'voluntary-benefits': { title: 'Voluntary Benefits', desc: 'Accident, critical illness, and supplemental plans' },
+  'wellness-programs': { title: 'Wellness Programs', desc: 'EAP, mental health, and telehealth services' },
+  'compliance-administration': { title: 'Compliance & Admin', desc: 'ACA, ERISA, COBRA, and Section 125 management' },
 };
 
-export default function RelatedCoverages({ slugs, title = 'Related Coverage' }) {
+export default function RelatedCoverages({ slugs, title = 'Related Benefits' }) {
   const ref = useScrollAnimation();
 
   return (

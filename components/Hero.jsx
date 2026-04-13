@@ -14,13 +14,13 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80"
-          alt="Commercial semi-truck driving on a highway at sunset for trucking insurance"
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80"
+          alt="Professional team collaborating in a modern office for employee benefits consulting"
           width={1920}
           height={1080}
           loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ opacity: 0.5, objectPosition: '50% 0%', filter: 'grayscale(100%)' }}
+          style={{ opacity: 0.5, objectPosition: '50% 30%', filter: 'grayscale(100%)' }}
         />
         <div className="absolute inset-0 bg-brand" style={{ opacity: 0.45 }} />
         {/* Grain texture overlay */}
@@ -50,9 +50,9 @@ export default function Hero() {
               transition: 'opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s',
             }}
           >
-            <span className="text-stone">Coverage Built for</span>
+            <span className="text-stone">Invest in</span>
             <br />
-            <span className="text-gold">the Road Ahead.</span>
+            <span className="text-gold">Your People.</span>
           </h1>
 
           <p
@@ -67,7 +67,7 @@ export default function Hero() {
               transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
             }}
           >
-            Specialized trucking insurance for owner-operators, fleets, and transportation businesses — from the operation you&apos;ve built to the growth ahead.
+            Comprehensive employee benefits programs designed to attract talent, retain your team, and keep your workforce healthy and engaged.
           </p>
 
           <div
@@ -82,7 +82,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center border-2 border-brand bg-brand text-stone text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:border-stone hover:bg-stone hover:text-brand no-underline"
               style={{ padding: '0.8rem 2.5rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}
             >
-              Get Your Quote Today
+              Get a Benefits Consultation
             </a>
           </div>
         </div>

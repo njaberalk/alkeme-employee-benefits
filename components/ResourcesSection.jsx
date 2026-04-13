@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const featuredResources = [
-  { slug: 'trucking-insurance-cost', title: 'How Much Does Trucking Insurance Cost?', category: 'Guide', desc: 'Average costs by fleet size, pricing factors, and strategies to reduce your premiums.' },
-  { slug: 'fmcsa-insurance-requirements', title: 'FMCSA Insurance Requirements', category: 'Guide', desc: 'Federal minimum limits, MCS-90 endorsements, BMC filings, and compliance checklist.' },
-  { slug: 'new-authority-insurance', title: 'Insurance for New Trucking Authority', category: 'Guide', desc: 'What new carriers need before their first dispatch and how to get covered.' },
-  { slug: 'commercial-auto-vs-trucking-insurance', title: 'Commercial Auto vs Trucking Insurance', category: 'Comparison', desc: 'Key differences and when you need specialized trucking coverage.' },
-  { slug: 'lower-trucking-insurance-premiums', title: 'How to Lower Your Premiums', category: 'Guide', desc: 'Practical strategies for reducing your trucking insurance costs.' },
-  { slug: 'trucking-insurance-glossary', title: 'Trucking Insurance Glossary', category: 'Reference', desc: '40+ key terms every carrier should know, explained clearly.' },
+  { slug: 'employee-benefits-cost', title: 'How Much Do Employee Benefits Cost?', category: 'Guide', desc: 'Average costs per employee, benchmarking by company size, and strategies to optimize your benefits spend.' },
+  { slug: 'aca-compliance-guide', title: 'ACA Compliance Guide for Employers', category: 'Guide', desc: 'ALE determination, 1094/1095 reporting, affordability safe harbors, and penalty avoidance.' },
+  { slug: 'open-enrollment-guide', title: 'Open Enrollment Best Practices', category: 'Guide', desc: 'Timeline planning, communication strategies, and decision support tools for a smooth enrollment.' },
+  { slug: 'hsa-vs-fsa-guide', title: 'HSA vs. FSA: Which Is Right for You?', category: 'Comparison', desc: 'Eligibility, contribution limits, investment options, and rollover rules compared side by side.' },
+  { slug: 'self-funding-guide', title: 'Self-Funding vs. Fully Insured Guide', category: 'Guide', desc: 'Level-funded options, stop-loss insurance, TPA selection, and when to consider self-funding.' },
+  { slug: 'employee-benefits-glossary', title: 'Employee Benefits Glossary', category: 'Reference', desc: '50+ key terms every employer should know, explained clearly and concisely.' },
 ];
 
 export default function ResourcesSection() {
@@ -23,10 +23,10 @@ export default function ResourcesSection() {
             Resources
           </p>
           <h2 className="text-brand font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-            Trucking Insurance Guides & Tools
+            Employee Benefits Guides & Tools
           </h2>
           <p className="text-brand" style={{ fontSize: '1rem', lineHeight: '1.6' }}>
-            Expert resources to help you understand your coverage options, reduce costs, and stay compliant.
+            Expert resources to help you understand your benefits options, control costs, and stay compliant.
           </p>
         </div>
 

@@ -5,44 +5,45 @@ import { useNavScrollBehavior } from '../hooks/useScrollAnimation';
 import { usePathname } from 'next/navigation';
 
 const coverageItems = [
-  { label: 'Auto Liability', href: '/coverage/auto-liability/' },
-  { label: 'Physical Damage', href: '/coverage/physical-damage/' },
-  { label: 'Motor Truck Cargo', href: '/coverage/motor-truck-cargo/' },
-  { label: 'General Liability', href: '/coverage/general-liability/' },
-  { label: 'Non-Trucking Liability', href: '/coverage/non-trucking-liability/' },
-  { label: 'Trailer Interchange', href: '/coverage/trailer-interchange/' },
-  { label: 'Workers\' Comp', href: '/coverage/workers-compensation/' },
-  { label: 'Umbrella / Excess', href: '/coverage/umbrella-excess-liability/' },
-  { label: 'Occupational Accident', href: '/coverage/occupational-accident/' },
+  { label: 'Group Health Insurance', href: '/coverage/group-health-insurance/' },
+  { label: 'Dental Insurance', href: '/coverage/dental-insurance/' },
+  { label: 'Vision Insurance', href: '/coverage/vision-insurance/' },
+  { label: 'Life Insurance', href: '/coverage/life-insurance/' },
+  { label: 'Disability Insurance', href: '/coverage/disability-insurance/' },
+  { label: 'Retirement Plans', href: '/coverage/retirement-plans/' },
+  { label: 'Executive Benefits', href: '/coverage/executive-benefits/' },
+  { label: 'Voluntary Benefits', href: '/coverage/voluntary-benefits/' },
+  { label: 'Wellness Programs', href: '/coverage/wellness-programs/' },
+  { label: 'Compliance & Admin', href: '/coverage/compliance-administration/' },
 ];
 
 const resourceItems = [
   { label: '— Tools —', href: null, divider: true },
-  { label: 'FMCSA Requirements Checker', href: '/tools/fmcsa-checker/' },
+  { label: 'Benefits Cost Estimator', href: '/tools/benefits-cost-estimator/' },
   { label: 'State Requirements Lookup', href: '/tools/state-requirements/' },
   { label: '— Guides —', href: null, divider: true },
-  { label: 'Trucking Insurance Cost', href: '/resources/trucking-insurance-cost/' },
-  { label: 'FMCSA Requirements', href: '/resources/fmcsa-insurance-requirements/' },
-  { label: 'New Authority Insurance', href: '/resources/new-authority-insurance/' },
-  { label: 'Lower Your Premiums', href: '/resources/lower-trucking-insurance-premiums/' },
-  { label: 'Insurance Glossary', href: '/resources/trucking-insurance-glossary/' },
+  { label: 'Employee Benefits Cost', href: '/resources/employee-benefits-cost/' },
+  { label: 'ACA Compliance Guide', href: '/resources/aca-compliance-guide/' },
+  { label: 'Open Enrollment Guide', href: '/resources/open-enrollment-guide/' },
+  { label: 'HSA vs. FSA Guide', href: '/resources/hsa-vs-fsa-guide/' },
+  { label: 'Benefits Glossary', href: '/resources/employee-benefits-glossary/' },
   { label: '— Insights —', href: null, divider: true },
-  { label: 'Market Trends 2026', href: '/blog/trucking-insurance-market-trends-2026/' },
-  { label: 'Nuclear Verdicts Guide', href: '/blog/nuclear-verdicts-trucking-industry/' },
-  { label: 'New Carrier Mistakes', href: '/blog/mistakes-new-carriers-make-insurance/' },
+  { label: 'Benefits Trends 2026', href: '/blog/benefits-trends-2026/' },
+  { label: 'Open Enrollment Mistakes', href: '/blog/open-enrollment-mistakes/' },
+  { label: 'Mental Health Benefits', href: '/blog/mental-health-benefits-workplace/' },
 ];
 
 const industryItems = [
-  { label: 'Owner-Operators', href: '/industries/owner-operators/' },
-  { label: 'Small Fleets', href: '/industries/small-fleets/' },
-  { label: 'Large Fleets', href: '/industries/large-fleets/' },
-  { label: 'Hot Shot', href: '/industries/hot-shot-trucking/' },
-  { label: 'LTL / Last Mile', href: '/industries/ltl-last-mile/' },
-  { label: 'Intermodal', href: '/industries/intermodal/' },
-  { label: 'Refrigerated', href: '/industries/refrigerated/' },
-  { label: 'Flatbed', href: '/industries/flatbed/' },
-  { label: 'Hazmat', href: '/industries/hazmat/' },
-  { label: 'Car Haulers', href: '/industries/car-haulers/' },
+  { label: 'Small Business', href: '/industries/small-business/' },
+  { label: 'Mid-Market', href: '/industries/mid-market/' },
+  { label: 'Large Employers', href: '/industries/large-employers/' },
+  { label: 'Nonprofits', href: '/industries/nonprofits/' },
+  { label: 'Professional Services', href: '/industries/professional-services/' },
+  { label: 'Healthcare Employers', href: '/industries/healthcare-employers/' },
+  { label: 'Technology Companies', href: '/industries/technology-companies/' },
+  { label: 'Manufacturing', href: '/industries/manufacturing/' },
+  { label: 'Retail & Hospitality', href: '/industries/retail-hospitality/' },
+  { label: 'Construction & Trades', href: '/industries/construction-trades/' },
 ];
 
 function Dropdown({ label, items, isOpen, onToggle, onClose }) {
@@ -101,7 +102,7 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const navRef = useNavScrollBehavior();
   const pathname = usePathname();
-  const isHome = pathname === '/trucking' || pathname === '/trucking/' || pathname === '/';
+  const isHome = pathname === '/employee-benefits' || pathname === '/employee-benefits/' || pathname === '/';
 
   return (
     <>
@@ -127,10 +128,10 @@ export default function Header() {
               />
             </a>
 
-            {/* Desktop Nav - matching alkemeins.com structure */}
+            {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-0" role="navigation" aria-label="Main navigation">
               <Dropdown
-                label="Coverage"
+                label="Benefits"
                 items={coverageItems}
                 isOpen={openDropdown === 'coverage'}
                 onToggle={() => setOpenDropdown(openDropdown === 'coverage' ? null : 'coverage')}
@@ -162,7 +163,7 @@ export default function Header() {
                 className="border-[1.5px] border-blue text-blue hover:border-gold hover:bg-gold hover:text-brand uppercase tracking-[0.16em] px-5 py-2 font-bold rounded-[20px] ml-3 no-underline"
                 style={{ fontSize: '0.65rem', transition: 'all 0.24s' }}
               >
-                Get Your Quote
+                Get a Consultation
               </a>
             </nav>
 
@@ -182,7 +183,7 @@ export default function Header() {
         {/* Mobile Menu */}
         <div className="lg:hidden bg-stone overflow-hidden" style={{ maxHeight: mobileOpen ? '90vh' : '0', transition: 'max-height 0.4s ease', borderTop: mobileOpen ? '1px solid #e3e3d8' : 'none' }}>
           <div className="px-6 py-6 space-y-1 max-h-[80vh] overflow-y-auto">
-            <p className="text-blue-dark uppercase tracking-[0.12em] font-bold pb-2 border-b border-ash mb-3" style={{ fontSize: '0.65rem' }}>Coverage</p>
+            <p className="text-blue-dark uppercase tracking-[0.12em] font-bold pb-2 border-b border-ash mb-3" style={{ fontSize: '0.65rem' }}>Benefits</p>
             {coverageItems.map((item) => (
               <Link key={item.label} href={item.href} onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem', transition: 'all 0.2s' }}>
                 {item.label}
@@ -200,16 +201,16 @@ export default function Header() {
               <Link href={isHome ? '#states' : '/#states'} onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.16em] font-bold py-2 no-underline" style={{ fontSize: '0.75rem' }}>States & Cities</Link>
 
               <p className="text-blue-dark uppercase tracking-[0.12em] font-bold pb-2 border-b border-ash mb-3 mt-4" style={{ fontSize: '0.65rem' }}>Tools & Resources</p>
-              <Link href="/tools/fmcsa-checker/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>FMCSA Requirements Checker</Link>
+              <Link href="/tools/benefits-cost-estimator/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>Benefits Cost Estimator</Link>
               <Link href="/tools/state-requirements/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>State Requirements Lookup</Link>
-              <Link href="/resources/trucking-insurance-cost/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>Trucking Insurance Cost</Link>
-              <Link href="/resources/fmcsa-insurance-requirements/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>FMCSA Requirements Guide</Link>
-              <Link href="/blog/trucking-insurance-market-trends-2026/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>Market Trends 2026</Link>
-              <a href="https://alkemeins.com" onClick={() => setMobileOpen(false)} className="block text-blue-dark hover:text-brand uppercase tracking-[0.12em] font-bold py-2 no-underline" style={{ fontSize: '0.65rem' }}>← Back to ALKEME</a>
+              <Link href="/resources/employee-benefits-cost/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>Employee Benefits Cost Guide</Link>
+              <Link href="/resources/aca-compliance-guide/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>ACA Compliance Guide</Link>
+              <Link href="/blog/benefits-trends-2026/" onClick={() => setMobileOpen(false)} className="block text-brand hover:text-blue-dark uppercase tracking-[0.12em] font-semibold py-2 no-underline" style={{ fontSize: '0.7rem' }}>Benefits Trends 2026</Link>
+              <a href="https://alkemeins.com" onClick={() => setMobileOpen(false)} className="block text-blue-dark hover:text-brand uppercase tracking-[0.12em] font-bold py-2 no-underline" style={{ fontSize: '0.65rem' }}>&larr; Back to ALKEME</a>
             </div>
 
             <a href="https://alkemeins.com/form" className="inline-block border-2 border-gold bg-gold text-brand uppercase tracking-[0.16em] px-6 py-3 font-bold rounded-[20px] mt-4 no-underline text-center w-full" style={{ fontSize: '0.75rem', transition: 'all 0.24s' }}>
-              Get Your Quote
+              Get a Consultation
             </a>
           </div>
         </div>

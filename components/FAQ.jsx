@@ -3,12 +3,12 @@ import { useState, useRef, useEffect } from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const faqs = [
-  { q: 'What insurance does a trucking company need?', a: 'At minimum, most trucking operations require primary auto liability, physical damage, and cargo coverage. Depending on your operation, you may also need general liability, workers\' compensation, non-trucking liability, trailer interchange, and umbrella/excess coverage. We help you identify exactly what your operation requires based on your authority type, cargo, and operating radius.' },
-  { q: 'Do you insure both owner-operators and fleets?', a: 'Yes. We work with independent owner-operators running a single unit as well as fleets of all sizes — from small operations with a handful of trucks to large carriers with hundreds of power units. Our coverage programs are scaled and customized to match the size and complexity of each operation.' },
-  { q: 'Can you help with contract and compliance requirements?', a: 'Absolutely. We understand the insurance requirements that shippers, brokers, and regulatory bodies impose on carriers. We can help ensure your certificates of insurance, policy endorsements, and filing requirements align with your contractual obligations and FMCSA standards.' },
-  { q: 'How quickly can I get a quote?', a: 'In most cases, we can provide an initial quote within 24 hours of receiving your completed information. For more complex accounts or large fleets, the process may take slightly longer to ensure we explore the best options across our carrier network.' },
-  { q: 'Do you offer cargo and physical damage coverage?', a: 'Yes. Motor truck cargo coverage protects the goods you haul, while physical damage coverage protects your trucks and trailers. We can tailor both coverages to your specific cargo types, vehicle values, and deductible preferences.' },
-  { q: 'Can coverage be customized for my operation?', a: 'Every policy we place is built around your specific operation. We consider your equipment, routes, cargo types, loss history, and business goals to design a program that provides the right coverage at a competitive price — not a generic package.' },
+  { q: 'What types of employee benefits does ALKEME offer?', a: 'We provide a full spectrum of employee benefits solutions including group health insurance, dental, vision, life and disability coverage, retirement plans, executive benefits, voluntary benefits, wellness programs, and compliance administration. Our team designs customized benefits packages tailored to your workforce size, budget, and strategic goals.' },
+  { q: 'How much do employee benefits cost per employee?', a: 'The cost varies based on your company size, industry, location, plan design, and employee demographics. On average, employers spend between $12,000 and $23,000 per employee annually on total benefits. We benchmark your costs against industry standards and help you design a competitive package within your budget.' },
+  { q: 'Do you help with ACA compliance and reporting?', a: 'Absolutely. We provide full ACA compliance support including Applicable Large Employer determination, affordability testing, 1094-C and 1095-C preparation and filing, and ongoing monitoring of regulatory changes. Our compliance team ensures you meet all federal and state reporting obligations.' },
+  { q: 'Can you manage our open enrollment process?', a: 'Yes. We handle every aspect of open enrollment from timeline planning and employee communication materials to benefits fairs, enrollment platform setup, and post-enrollment reconciliation. Our goal is to make enrollment seamless for both HR teams and employees.' },
+  { q: "What's the difference between fully insured and self-funded?", a: 'With fully insured plans, you pay a fixed premium to a carrier who assumes all claims risk. Self-funded plans mean your company pays claims directly, typically with stop-loss insurance to cap catastrophic exposure. We also offer level-funded arrangements that combine the predictability of fully insured with the cost savings potential of self-funding.' },
+  { q: 'Do you offer benefits for small businesses under 50 employees?', a: 'Yes. We specialize in helping small businesses access competitive benefits packages that rival larger employers. Through our carrier relationships and group purchasing strategies, we help small employers offer attractive medical, dental, vision, and ancillary benefits that support recruitment and retention.' },
 ];
 
 function FaqItem({ faq, isOpen, onClick }) {
@@ -40,7 +40,6 @@ function FaqItem({ faq, isOpen, onClick }) {
           </svg>
         </div>
       </button>
-      {/* Animated content - height 0 to auto matching alkeme faq_content-wrap */}
       <div
         ref={contentRef}
         style={{
@@ -66,7 +65,7 @@ export default function FAQ() {
         <div ref={headerRef} className="text-center mb-14 fade-in-view">
           <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>Frequently Asked Questions</p>
           <h2 className="text-brand font-bold leading-[1.3] tracking-tight" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-            Common Questions About Trucking Insurance
+            Common Questions About Employee Benefits
           </h2>
         </div>
 

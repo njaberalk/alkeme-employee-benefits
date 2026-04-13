@@ -13,12 +13,12 @@ export async function generateMetadata({ params }) {
     title: coverage.metaTitle,
     description: coverage.metaDescription,
     alternates: {
-      canonical: `https://alkemeins.com/trucking/coverage/${coverage.slug}/`,
+      canonical: `https://alkemeins.com/employee-benefits/coverage/${coverage.slug}/`,
     },
     openGraph: {
       title: coverage.metaTitle,
       description: coverage.metaDescription,
-      url: `https://alkemeins.com/trucking/coverage/${coverage.slug}/`,
+      url: `https://alkemeins.com/employee-benefits/coverage/${coverage.slug}/`,
       type: 'website',
     },
   };
@@ -34,10 +34,10 @@ export default async function CoveragePage({ params }) {
       '@context': 'https://schema.org',
       '@type': 'Service',
       name: coverage.title,
-      provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com/trucking' },
+      provider: { '@type': 'InsuranceAgency', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com/employee-benefits' },
       description: coverage.metaDescription,
-      url: `https://alkemeins.com/trucking/coverage/${coverage.slug}/`,
-      serviceType: 'Insurance',
+      url: `https://alkemeins.com/employee-benefits/coverage/${coverage.slug}/`,
+      serviceType: 'Employee Benefits',
       areaServed: { '@type': 'Country', name: 'United States' },
     },
     ...(coverage.faqs?.length ? [{

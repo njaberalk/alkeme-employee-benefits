@@ -18,7 +18,7 @@ export default function FMCSACheckerContent() {
       <Breadcrumbs items={[
         { label: 'Home', href: '/' },
         { label: 'Tools' },
-        { label: 'FMCSA Requirements Checker' },
+        { label: 'Benefits Cost Estimator' },
       ]} />
 
       {/* Hero */}
@@ -29,10 +29,10 @@ export default function FMCSACheckerContent() {
         <div className="relative max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4 text-center">
           <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>Free Tool</p>
           <h1 className="text-stone font-extrabold tracking-tight mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: '1.1' }}>
-            FMCSA Coverage Requirements Checker
+            Benefits Cost Estimator
           </h1>
           <p className="text-cream font-light mx-auto" style={{ fontSize: '1.1rem', lineHeight: '1.6', maxWidth: '600px' }}>
-            Select your cargo type below to see the exact insurance requirements, minimum limits, and required filings for your operation.
+            Select your company size below to see estimated per-employee costs, recommended benefit lines, and compliance requirements for your organization.
           </p>
         </div>
       </section>
@@ -40,10 +40,10 @@ export default function FMCSACheckerContent() {
       {/* Tool */}
       <section className="bg-stone" style={{ padding: '4rem 0' }}>
         <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
-          {/* Cargo Type Selector */}
+          {/* Company Size Selector */}
           <div className="max-w-3xl mx-auto mb-12">
             <label className="block text-brand font-bold mb-4" style={{ fontSize: '1rem' }}>
-              What type of freight do you haul?
+              How many employees does your organization have?
             </label>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {cargoTypes.map((cargo) => (
@@ -63,11 +63,11 @@ export default function FMCSACheckerContent() {
           {/* Results */}
           {result && (
             <div className="max-w-3xl mx-auto">
-              {/* Minimum Liability */}
+              {/* Estimated Cost */}
               <div className="border-2 border-ash rounded-[2rem] p-8 mb-6 bg-white/40">
                 <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
                   <div>
-                    <p className="text-blue-dark uppercase tracking-[0.12em] font-bold mb-1" style={{ fontSize: '0.7rem' }}>Federal Minimum Liability</p>
+                    <p className="text-blue-dark uppercase tracking-[0.12em] font-bold mb-1" style={{ fontSize: '0.7rem' }}>Estimated Annual Cost Per Employee</p>
                     <p className="text-brand font-extrabold" style={{ fontSize: '2.5rem', lineHeight: '1' }}>{result.minimumLiability}</p>
                   </div>
                   <a
@@ -75,13 +75,13 @@ export default function FMCSACheckerContent() {
                     className="inline-flex items-center justify-center border-2 border-gold bg-gold text-brand uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:border-brand hover:bg-brand hover:text-stone no-underline"
                     style={{ padding: '0.6rem 1.5rem', fontSize: '0.7rem', lineHeight: '2', transition: 'all 0.24s' }}
                   >
-                    Get a Quote
+                    Get a Custom Quote
                   </a>
                 </div>
 
-                {/* Required Filings */}
+                {/* Compliance Requirements */}
                 <div className="mb-6">
-                  <h3 className="text-brand font-bold mb-3" style={{ fontSize: '1rem' }}>Required Filings</h3>
+                  <h3 className="text-brand font-bold mb-3" style={{ fontSize: '1rem' }}>Compliance Requirements</h3>
                   <div className="space-y-2">
                     {result.filings.map((filing, i) => (
                       <div key={i} className="flex items-center gap-2">
@@ -92,8 +92,8 @@ export default function FMCSACheckerContent() {
                   </div>
                 </div>
 
-                {/* Required Coverages */}
-                <h3 className="text-brand font-bold mb-4" style={{ fontSize: '1rem' }}>Coverage Requirements</h3>
+                {/* Recommended Benefits */}
+                <h3 className="text-brand font-bold mb-4" style={{ fontSize: '1rem' }}>Recommended Benefits</h3>
                 <div className="space-y-4">
                   {result.requiredCoverages.map((cov, i) => (
                     <div key={i} className="border border-ash rounded-[1rem] p-4">
@@ -101,14 +101,14 @@ export default function FMCSACheckerContent() {
                         <div className="flex-1">
                           {cov.slug ? (
                             <Link href={`/coverage/${cov.slug}/`} className="text-brand font-bold hover:text-blue-dark no-underline" style={{ fontSize: '0.95rem', transition: 'color 0.2s' }}>
-                              {cov.coverage} →
+                              {cov.coverage} &rarr;
                             </Link>
                           ) : (
                             <span className="text-brand font-bold" style={{ fontSize: '0.95rem' }}>{cov.coverage}</span>
                           )}
                           <p className="text-brand/60 mt-1" style={{ fontSize: '0.8rem', lineHeight: '1.4' }}>{cov.notes}</p>
                         </div>
-                        <span className={`shrink-0 rounded-[2rem] px-3 py-1 font-bold uppercase tracking-[0.1em] ${cov.minimum === 'Not required' ? 'bg-ash/50 text-brand/50' : 'bg-gold/20 text-brand'}`} style={{ fontSize: '0.65rem' }}>
+                        <span className={`shrink-0 rounded-[2rem] px-3 py-1 font-bold uppercase tracking-[0.1em] ${cov.minimum === 'Voluntary' ? 'bg-ash/50 text-brand/50' : cov.minimum.includes('Required') ? 'bg-gold/20 text-brand' : 'bg-blue/10 text-blue-dark'}`} style={{ fontSize: '0.65rem' }}>
                           {cov.minimum}
                         </span>
                       </div>
@@ -127,13 +127,13 @@ export default function FMCSACheckerContent() {
 
               {/* Cross-links */}
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link href="/resources/fmcsa-insurance-requirements/" className="block border-2 border-ash rounded-[2rem] p-5 hover:border-blue-dark no-underline" style={{ transition: 'all 0.24s' }}>
+                <Link href="/resources/employee-benefits-cost/" className="block border-2 border-ash rounded-[2rem] p-5 hover:border-blue-dark no-underline" style={{ transition: 'all 0.24s' }}>
                   <span className="text-blue-dark uppercase tracking-[0.12em] font-bold block mb-1" style={{ fontSize: '0.65rem' }}>Guide</span>
-                  <span className="text-brand font-bold block" style={{ fontSize: '0.9rem' }}>FMCSA Insurance Requirements Explained →</span>
+                  <span className="text-brand font-bold block" style={{ fontSize: '0.9rem' }}>How Much Do Employee Benefits Cost? &rarr;</span>
                 </Link>
-                <Link href="/resources/new-authority-insurance/" className="block border-2 border-ash rounded-[2rem] p-5 hover:border-blue-dark no-underline" style={{ transition: 'all 0.24s' }}>
+                <Link href="/resources/aca-compliance-guide/" className="block border-2 border-ash rounded-[2rem] p-5 hover:border-blue-dark no-underline" style={{ transition: 'all 0.24s' }}>
                   <span className="text-blue-dark uppercase tracking-[0.12em] font-bold block mb-1" style={{ fontSize: '0.65rem' }}>Guide</span>
-                  <span className="text-brand font-bold block" style={{ fontSize: '0.9rem' }}>Insurance for New Trucking Authority →</span>
+                  <span className="text-brand font-bold block" style={{ fontSize: '0.9rem' }}>ACA Compliance Guide for Employers &rarr;</span>
                 </Link>
               </div>
             </div>

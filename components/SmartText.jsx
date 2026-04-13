@@ -5,43 +5,55 @@ import { usePathname } from 'next/navigation';
 // All linkable terms → their page URLs
 // Order matters: longer phrases first to avoid partial matches
 const LINK_MAP = [
-  // Coverages
-  ['primary auto liability', '/coverage/auto-liability/'],
-  ['auto liability', '/coverage/auto-liability/'],
-  ['physical damage', '/coverage/physical-damage/'],
-  ['motor truck cargo', '/coverage/motor-truck-cargo/'],
-  ['cargo coverage', '/coverage/motor-truck-cargo/'],
-  ['cargo insurance', '/coverage/motor-truck-cargo/'],
-  ['general liability', '/coverage/general-liability/'],
-  ['non-trucking liability', '/coverage/non-trucking-liability/'],
-  ['bobtail coverage', '/coverage/non-trucking-liability/'],
-  ['bobtail insurance', '/coverage/non-trucking-liability/'],
-  ['trailer interchange', '/coverage/trailer-interchange/'],
-  ['workers\' compensation', '/coverage/workers-compensation/'],
-  ['workers compensation', '/coverage/workers-compensation/'],
-  ['workers\' comp', '/coverage/workers-compensation/'],
-  ['workers comp', '/coverage/workers-compensation/'],
-  ['umbrella coverage', '/coverage/umbrella-excess-liability/'],
-  ['umbrella liability', '/coverage/umbrella-excess-liability/'],
-  ['excess liability', '/coverage/umbrella-excess-liability/'],
-  ['occupational accident', '/coverage/occupational-accident/'],
+  // Benefit Lines
+  ['group health insurance', '/coverage/group-health-insurance/'],
+  ['health insurance', '/coverage/group-health-insurance/'],
+  ['medical insurance', '/coverage/group-health-insurance/'],
+  ['dental insurance', '/coverage/dental-insurance/'],
+  ['dental plans', '/coverage/dental-insurance/'],
+  ['vision insurance', '/coverage/vision-insurance/'],
+  ['vision coverage', '/coverage/vision-insurance/'],
+  ['life insurance', '/coverage/life-insurance/'],
+  ['group term life', '/coverage/life-insurance/'],
+  ['AD&D', '/coverage/life-insurance/'],
+  ['short-term disability', '/coverage/disability-insurance/'],
+  ['long-term disability', '/coverage/disability-insurance/'],
+  ['disability insurance', '/coverage/disability-insurance/'],
+  ['disability coverage', '/coverage/disability-insurance/'],
+  ['retirement plans', '/coverage/retirement-plans/'],
+  ['401(k)', '/coverage/retirement-plans/'],
+  ['403(b)', '/coverage/retirement-plans/'],
+  ['profit sharing', '/coverage/retirement-plans/'],
+  ['executive benefits', '/coverage/executive-benefits/'],
+  ['deferred compensation', '/coverage/executive-benefits/'],
+  ['key person insurance', '/coverage/executive-benefits/'],
+  ['voluntary benefits', '/coverage/voluntary-benefits/'],
+  ['critical illness', '/coverage/voluntary-benefits/'],
+  ['hospital indemnity', '/coverage/voluntary-benefits/'],
+  ['wellness programs', '/coverage/wellness-programs/'],
+  ['employee assistance program', '/coverage/wellness-programs/'],
+  ['EAP', '/coverage/wellness-programs/'],
+  ['telehealth', '/coverage/wellness-programs/'],
+  ['ACA compliance', '/coverage/compliance-administration/'],
+  ['ERISA compliance', '/coverage/compliance-administration/'],
+  ['COBRA administration', '/coverage/compliance-administration/'],
+  ['COBRA', '/coverage/compliance-administration/'],
+  ['Section 125', '/coverage/compliance-administration/'],
+  ['cafeteria plan', '/coverage/compliance-administration/'],
 
   // Industries
-  ['owner-operators', '/industries/owner-operators/'],
-  ['owner operators', '/industries/owner-operators/'],
-  ['small fleets', '/industries/small-fleets/'],
-  ['large fleets', '/industries/large-fleets/'],
-  ['hot shot trucking', '/industries/hot-shot-trucking/'],
-  ['hot shot', '/industries/hot-shot-trucking/'],
-  ['LTL', '/industries/ltl-last-mile/'],
-  ['last mile', '/industries/ltl-last-mile/'],
-  ['intermodal', '/industries/intermodal/'],
-  ['refrigerated', '/industries/refrigerated/'],
-  ['flatbed', '/industries/flatbed/'],
-  ['hazmat', '/industries/hazmat/'],
-  ['car haulers', '/industries/car-haulers/'],
+  ['small business', '/industries/small-business/'],
+  ['mid-market', '/industries/mid-market/'],
+  ['large employers', '/industries/large-employers/'],
+  ['nonprofits', '/industries/nonprofits/'],
+  ['professional services', '/industries/professional-services/'],
+  ['healthcare employers', '/industries/healthcare-employers/'],
+  ['technology companies', '/industries/technology-companies/'],
+  ['manufacturing', '/industries/manufacturing/'],
+  ['retail and hospitality', '/industries/retail-hospitality/'],
+  ['construction and trades', '/industries/construction-trades/'],
 
-  // States (only match when followed by common context words to avoid over-linking)
+  // States
   ['Alabama', '/states/alabama/'], ['Alaska', '/states/alaska/'], ['Arizona', '/states/arizona/'],
   ['Arkansas', '/states/arkansas/'], ['California', '/states/california/'], ['Colorado', '/states/colorado/'],
   ['Connecticut', '/states/connecticut/'], ['Delaware', '/states/delaware/'], ['Florida', '/states/florida/'],
@@ -62,12 +74,14 @@ const LINK_MAP = [
   ['West Virginia', '/states/west-virginia/'], ['Wisconsin', '/states/wisconsin/'], ['Wyoming', '/states/wyoming/'],
 
   // Resources
-  ['FMCSA requirements', '/resources/fmcsa-insurance-requirements/'],
-  ['FMCSA', '/resources/fmcsa-insurance-requirements/'],
-  ['MCS-90', '/resources/fmcsa-insurance-requirements/'],
+  ['open enrollment', '/resources/open-enrollment-guide/'],
+  ['HSA', '/resources/hsa-vs-fsa-guide/'],
+  ['FSA', '/resources/hsa-vs-fsa-guide/'],
+  ['self-funding', '/resources/self-funding-guide/'],
+  ['benefits benchmarking', '/resources/benefits-benchmarking/'],
 
   // Tools
-  ['requirements checker', '/tools/fmcsa-checker/'],
+  ['cost estimator', '/tools/benefits-cost-estimator/'],
   ['state requirements', '/tools/state-requirements/'],
 ];
 
@@ -76,8 +90,7 @@ export default function SmartText({ text, className, style }) {
   const pathname = usePathname();
   if (!text) return null;
 
-  // Get current page path to avoid self-linking
-  const currentPath = pathname?.replace(/\/trucking/, '') || '';
+  const currentPath = pathname?.replace(/\/employee-benefits/, '') || '';
   const parts = autoLink(text, currentPath);
 
   return (
@@ -112,7 +125,6 @@ function autoLink(text, currentPath = '') {
 
     for (const [term, href] of LINK_MAP) {
       if (linked.has(term)) continue;
-      // Skip if this link points to the current page
       if (currentPath && href === currentPath) continue;
       if (currentPath && currentPath.endsWith('/') && href === currentPath) continue;
       if (currentPath && href.replace(/\/$/, '') === currentPath.replace(/\/$/, '')) continue;
@@ -128,11 +140,9 @@ function autoLink(text, currentPath = '') {
     }
 
     if (earliestMatch) {
-      // Add text before the match
       if (earliestIndex > 0) {
         parts.push(remaining.substring(0, earliestIndex));
       }
-      // Add the link
       const matchedText = remaining.substring(earliestIndex, earliestIndex + earliestMatch.length);
       parts.push({ text: matchedText, href: earliestMatch.href });
       linked.add(matchedTerm);

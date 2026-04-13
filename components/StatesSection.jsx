@@ -4,16 +4,16 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { cities } from '../data/cities';
 
 const featuredStates = [
-  { name: 'Texas', slug: 'texas', abbr: 'TX' },
   { name: 'California', slug: 'california', abbr: 'CA' },
+  { name: 'New York', slug: 'new-york', abbr: 'NY' },
+  { name: 'Texas', slug: 'texas', abbr: 'TX' },
   { name: 'Florida', slug: 'florida', abbr: 'FL' },
-  { name: 'Georgia', slug: 'georgia', abbr: 'GA' },
   { name: 'Illinois', slug: 'illinois', abbr: 'IL' },
-  { name: 'Ohio', slug: 'ohio', abbr: 'OH' },
   { name: 'Pennsylvania', slug: 'pennsylvania', abbr: 'PA' },
-  { name: 'Indiana', slug: 'indiana', abbr: 'IN' },
-  { name: 'Tennessee', slug: 'tennessee', abbr: 'TN' },
-  { name: 'North Carolina', slug: 'north-carolina', abbr: 'NC' },
+  { name: 'Massachusetts', slug: 'massachusetts', abbr: 'MA' },
+  { name: 'New Jersey', slug: 'new-jersey', abbr: 'NJ' },
+  { name: 'Washington', slug: 'washington', abbr: 'WA' },
+  { name: 'Colorado', slug: 'colorado', abbr: 'CO' },
 ];
 
 const allStates = [
@@ -36,17 +36,17 @@ export default function StatesSection() {
       <div className="max-w-[68rem] mx-auto px-[60px] max-lg:px-6 max-md:px-4">
         <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-12 fade-in-view">
           <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>
-            Nationwide Coverage
+            Nationwide Compliance
           </p>
           <h2 className="text-stone font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-            Trucking Insurance Across All 50 States
+            Employee Benefits Compliance Across All 50 States
           </h2>
           <p className="text-cream font-light" style={{ lineHeight: '22px' }}>
-            State-specific requirements, corridors, and coverage guidance — wherever your fleet operates.
+            State-specific mandates, paid leave laws, and benefits regulations — wherever your employees are located.
           </p>
         </div>
 
-        {/* Featured states - top trucking states */}
+        {/* Featured states */}
         <div ref={gridRef} className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10 stagger-children">
           {featuredStates.map((state) => (
             <Link
@@ -80,9 +80,9 @@ export default function StatesSection() {
           </div>
         </div>
 
-        {/* All 100 Trucking Cities */}
+        {/* All 100 Cities */}
         <div className="mt-14 text-center">
-          <h3 className="text-stone font-bold mb-6" style={{ fontSize: '1.3rem' }}>Major Trucking Cities</h3>
+          <h3 className="text-stone font-bold mb-6" style={{ fontSize: '1.3rem' }}>Major Metro Areas</h3>
           <div className="flex flex-wrap justify-center gap-2">
             {cities.map((c) => (
               <Link

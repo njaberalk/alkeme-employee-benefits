@@ -10,28 +10,28 @@ const alkemeLinks = [
 ];
 
 const coverageLinks = [
-  { label: 'Auto Liability', href: '/coverage/auto-liability/' },
-  { label: 'Physical Damage', href: '/coverage/physical-damage/' },
-  { label: 'Motor Truck Cargo', href: '/coverage/motor-truck-cargo/' },
-  { label: 'General Liability', href: '/coverage/general-liability/' },
-  { label: 'Workers\' Comp', href: '/coverage/workers-compensation/' },
-  { label: 'Umbrella / Excess', href: '/coverage/umbrella-excess-liability/' },
+  { label: 'Group Health Insurance', href: '/coverage/group-health-insurance/' },
+  { label: 'Dental Insurance', href: '/coverage/dental-insurance/' },
+  { label: 'Vision Insurance', href: '/coverage/vision-insurance/' },
+  { label: 'Life Insurance', href: '/coverage/life-insurance/' },
+  { label: 'Disability Insurance', href: '/coverage/disability-insurance/' },
+  { label: 'Retirement Plans', href: '/coverage/retirement-plans/' },
 ];
 
 const industryLinks = [
-  { label: 'Owner-Operators', href: '/industries/owner-operators/' },
-  { label: 'Small Fleets', href: '/industries/small-fleets/' },
-  { label: 'Large Fleets', href: '/industries/large-fleets/' },
-  { label: 'Flatbed', href: '/industries/flatbed/' },
-  { label: 'Refrigerated', href: '/industries/refrigerated/' },
-  { label: 'Hazmat', href: '/industries/hazmat/' },
+  { label: 'Small Business', href: '/industries/small-business/' },
+  { label: 'Mid-Market', href: '/industries/mid-market/' },
+  { label: 'Large Employers', href: '/industries/large-employers/' },
+  { label: 'Technology Companies', href: '/industries/technology-companies/' },
+  { label: 'Healthcare Employers', href: '/industries/healthcare-employers/' },
+  { label: 'Nonprofits', href: '/industries/nonprofits/' },
 ];
 
-const truckingLinks = [
+const benefitsLinks = [
   { label: 'Why Choose Us', href: '/#why-us' },
   { label: 'Our Process', href: '/#process' },
   { label: 'FAQ', href: '/#faq' },
-  { label: 'Get a Quote', href: 'https://alkemeins.com/form', external: true },
+  { label: 'Get a Consultation', href: 'https://alkemeins.com/form', external: true },
 ];
 
 export default function Footer() {
@@ -50,7 +50,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-brand/60 mb-6" style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>
-              ALKEME Insurance Services is a nationally recognized insurance brokerage providing specialized transportation and trucking insurance solutions across all 50 states.
+              ALKEME Insurance Services is a nationally recognized brokerage providing comprehensive employee benefits consulting, plan design, and administration support for employers across all 50 states.
             </p>
             <div className="space-y-2">
               <a href="tel:+18559255363" className="block text-brand hover:text-blue-dark no-underline" style={{ fontSize: '0.95rem', lineHeight: '1.5', transition: 'all 0.2s' }}>
@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ALKEME Links - cross-link to main site */}
+          {/* ALKEME Links */}
           <div>
             <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>ALKEME</h4>
             <ul className="space-y-3 list-none p-0 m-0">
@@ -74,9 +74,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Trucking Coverage */}
+          {/* Benefits */}
           <div>
-            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>Coverage</h4>
+            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>Benefits</h4>
             <ul className="space-y-3 list-none p-0 m-0">
               {coverageLinks.map((link) => (
                 <li key={link.label} className="text-right max-lg:text-left">
@@ -98,11 +98,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Trucking Hub */}
+          {/* Benefits Hub */}
           <div>
-            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>Trucking</h4>
+            <h4 className="text-brand font-bold mb-5 text-right max-lg:text-left" style={{ fontSize: '1rem' }}>Benefits</h4>
             <ul className="space-y-3 list-none p-0 m-0">
-              {truckingLinks.map((link) => (
+              {benefitsLinks.map((link) => (
                 <li key={link.label} className="text-right max-lg:text-left">
                   <Link href={link.href} className="text-brand hover:text-blue-dark no-underline" style={{ fontSize: '0.9rem', lineHeight: '1.5', transition: 'all 0.2s' }}>{link.label}</Link>
                 </li>

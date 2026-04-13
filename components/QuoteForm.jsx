@@ -11,13 +11,13 @@ export default function QuoteForm() {
           {/* Left - Copy */}
           <div>
             <p className="text-blue uppercase tracking-[0.15em] font-bold mb-4" style={{ fontSize: '0.85rem' }}>
-              Get Covered
+              Get Started
             </p>
             <h2 className="text-stone font-bold leading-[1.3] tracking-tight mb-5" style={{ fontSize: 'clamp(2.2rem, 4vw, 2.6rem)' }}>
-              Share a Few Details and Let&apos;s Find the Right Coverage
+              Tell Us About Your Team and Let&apos;s Build Better Benefits
             </h2>
             <p className="text-cream font-light mb-8" style={{ lineHeight: '22px', maxWidth: '500px' }}>
-              Tell us about your operation and our transportation insurance specialists will reach out with tailored coverage options. No obligation — just expert guidance from a team that understands trucking.
+              Share a few details about your organization and our employee benefits specialists will reach out with a customized benefits strategy. No obligation — just expert guidance from a team that understands workforce management.
             </p>
 
             <a
@@ -25,7 +25,7 @@ export default function QuoteForm() {
               className="inline-flex items-center justify-center border-2 border-gold bg-gold text-brand text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:border-stone hover:bg-stone hover:text-brand no-underline"
               style={{ padding: '0.8rem 2.5rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}
             >
-              Get Your Quote Today
+              Request a Benefits Consultation
             </a>
 
             <div className="mt-10 space-y-4">
@@ -58,8 +58,8 @@ export default function QuoteForm() {
           {/* Right - Visual CTA card */}
           <div className="relative overflow-hidden rounded-[2rem]" style={{ minHeight: '400px' }}>
             <img
-              src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80"
-              alt="Trucking insurance specialist helping owner-operators find coverage"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+              alt="Employee benefits consultant meeting with HR team to discuss benefits strategy"
               width={800}
               height={600}
               className="absolute inset-0 w-full h-full object-cover"
@@ -69,17 +69,17 @@ export default function QuoteForm() {
             <div className="absolute inset-0 pointer-events-none" style={{ opacity: 0.08, backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`, backgroundRepeat: 'repeat', backgroundSize: '128px 128px' }} />
             <div className="relative h-full flex flex-col items-center justify-center text-center p-10" style={{ minHeight: '400px' }}>
               <h3 className="text-stone font-bold mb-4" style={{ fontSize: '1.8rem', lineHeight: '1.3' }}>
-                Ready to Protect Your Fleet?
+                Ready to Elevate Your Benefits?
               </h3>
               <p className="text-cream/80 font-light mb-8 max-w-sm" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
-                Our specialists understand trucking operations inside and out. Get coverage tailored to the way you run.
+                Our benefits specialists design programs that attract talent and protect your team. Let us build a package that works for your organization.
               </p>
               <a
                 href="https://alkemeins.com/form"
                 className="inline-flex items-center justify-center border-2 border-stone text-stone bg-transparent text-center uppercase tracking-[0.16em] rounded-[2rem] font-semibold hover:bg-stone hover:text-brand no-underline"
                 style={{ padding: '0.8rem 2rem 0.7rem', fontSize: '0.75rem', lineHeight: '2', transition: 'all 0.24s' }}
               >
-                Start Your Quote
+                Start Your Consultation
               </a>
             </div>
           </div>

@@ -9,30 +9,30 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://alkemeins.com/trucking'),
+  metadataBase: new URL('https://alkemeins.com/employee-benefits'),
   title: {
     template: '%s | ALKEME Insurance Services',
-    default: 'Trucking Insurance | ALKEME Insurance Services',
+    default: 'Employee Benefits | ALKEME Insurance Services',
   },
-  description: 'ALKEME Insurance Services provides specialized trucking insurance for owner-operators, fleets, and transportation businesses. Coverage for auto liability, cargo, physical damage, and more.',
+  description: 'ALKEME Insurance Services provides comprehensive employee benefits consulting, plan design, and administration for employers of all sizes. Group health, dental, vision, retirement, and more.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: 'ALKEME Insurance Services',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&h=630&q=80',
+        url: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&h=630&q=80',
         width: 1200,
         height: 630,
-        alt: 'ALKEME Insurance Services — Commercial Trucking Insurance',
+        alt: 'ALKEME Insurance Services — Employee Benefits Consulting',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Trucking Insurance | ALKEME Insurance Services',
-    description: 'Specialized trucking insurance for owner-operators, fleets, and transportation businesses across all 50 states.',
-    images: ['https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&h=630&q=80'],
+    title: 'Employee Benefits | ALKEME Insurance Services',
+    description: 'Comprehensive employee benefits consulting for employers of all sizes across all 50 states.',
+    images: ['https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&h=630&q=80'],
   },
   robots: {
     index: true,
@@ -46,7 +46,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://alkemeins.com/trucking/',
+    canonical: 'https://alkemeins.com/employee-benefits/',
   },
   icons: {
     icon: '/favicon.svg',

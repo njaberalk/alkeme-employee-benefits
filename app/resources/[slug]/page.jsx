@@ -13,12 +13,12 @@ export async function generateMetadata({ params }) {
     title: resource.metaTitle,
     description: resource.metaDescription,
     alternates: {
-      canonical: `https://alkemeins.com/trucking/resources/${resource.slug}/`,
+      canonical: `https://alkemeins.com/employee-benefits/resources/${resource.slug}/`,
     },
     openGraph: {
       title: `${resource.metaTitle} | ALKEME Insurance Services`,
       description: resource.metaDescription,
-      url: `https://alkemeins.com/trucking/resources/${resource.slug}/`,
+      url: `https://alkemeins.com/employee-benefits/resources/${resource.slug}/`,
       type: 'article',
     },
   };
@@ -37,7 +37,7 @@ export default async function ResourcePage({ params }) {
       author: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' },
       publisher: { '@type': 'Organization', name: 'ALKEME Insurance Services', url: 'https://alkemeins.com' },
       description: resource.metaDescription,
-      url: `https://alkemeins.com/trucking/resources/${resource.slug}/`,
+      url: `https://alkemeins.com/employee-benefits/resources/${resource.slug}/`,
     },
     ...(resource.faqs?.length ? [{
       '@context': 'https://schema.org',

@@ -1,12 +1,12 @@
 import HomeContent from './HomeContent';
 
 export const metadata = {
-  title: 'Commercial Trucking Insurance Solutions',
-  description: 'ALKEME Insurance Services provides specialized trucking insurance for owner-operators, fleets, and transportation businesses. Coverage for auto liability, cargo, physical damage, and more.',
+  title: 'Comprehensive Employee Benefits Solutions',
+  description: 'ALKEME Insurance Services provides comprehensive employee benefits consulting, plan design, and administration for employers of all sizes. Group health, dental, vision, retirement, and more.',
   openGraph: {
-    title: 'Trucking Insurance | ALKEME Insurance Services',
-    description: 'Specialized trucking insurance for owner-operators, fleets, and transportation businesses across all 50 states.',
-    url: 'https://alkemeins.com/trucking/',
+    title: 'Employee Benefits | ALKEME Insurance Services',
+    description: 'Comprehensive employee benefits consulting for employers of all sizes across all 50 states.',
+    url: 'https://alkemeins.com/employee-benefits/',
   },
 };
 
@@ -23,7 +23,7 @@ export default function HomePage() {
             url: 'https://alkemeins.com',
             telephone: '+18559255363',
             email: 'info@alkemeins.com',
-            description: 'ALKEME Insurance Services provides specialized commercial trucking insurance solutions for owner-operators, fleets, and transportation businesses across all 50 states.',
+            description: 'ALKEME Insurance Services provides comprehensive employee benefits consulting, plan design, and administration for employers of all sizes across all 50 states.',
             areaServed: { '@type': 'Country', name: 'United States' },
             parentOrganization: {
               '@type': 'Organization',
@@ -31,13 +31,14 @@ export default function HomePage() {
               url: 'https://alkemeins.com',
             },
             serviceType: [
-              'Commercial Trucking Insurance',
-              'Fleet Insurance',
-              'Owner-Operator Insurance',
-              'Motor Truck Cargo Insurance',
-              'Commercial Auto Liability',
-              'Physical Damage Coverage',
-              'Transportation Insurance',
+              'Employee Benefits Consulting',
+              'Group Health Insurance',
+              'Dental Insurance',
+              'Vision Insurance',
+              'Life Insurance',
+              'Disability Insurance',
+              'Retirement Plans',
+              'Benefits Administration',
             ],
           }),
         }}
@@ -51,50 +52,50 @@ export default function HomePage() {
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'What insurance does a trucking company need?',
+                name: 'What types of employee benefits does ALKEME offer?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'At minimum, most trucking operations require primary auto liability, physical damage, and cargo coverage. Depending on your operation, you may also need general liability, workers\' compensation, non-trucking liability, trailer interchange, and umbrella/excess coverage. We help you identify exactly what your operation requires based on your authority type, cargo, and operating radius.',
+                  text: 'We provide a full spectrum of employee benefits solutions including group health insurance, dental, vision, life and disability coverage, retirement plans, executive benefits, voluntary benefits, wellness programs, and compliance administration. Our team designs customized benefits packages tailored to your workforce size, budget, and strategic goals.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Do you insure both owner-operators and fleets?',
+                name: 'How much do employee benefits cost per employee?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes. We work with independent owner-operators running a single unit as well as fleets of all sizes — from small operations with a handful of trucks to large carriers with hundreds of power units. Our coverage programs are scaled and customized to match the size and complexity of each operation.',
+                  text: 'The cost varies based on your company size, industry, location, plan design, and employee demographics. On average, employers spend between $12,000 and $23,000 per employee annually on total benefits. We benchmark your costs against industry standards and help you design a competitive package within your budget.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Can you help with contract and compliance requirements?',
+                name: 'Do you help with ACA compliance and reporting?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Absolutely. We understand the insurance requirements that shippers, brokers, and regulatory bodies impose on carriers. We can help ensure your certificates of insurance, policy endorsements, and filing requirements align with your contractual obligations and FMCSA standards.',
+                  text: 'Absolutely. We provide full ACA compliance support including Applicable Large Employer determination, affordability testing, 1094-C and 1095-C preparation and filing, and ongoing monitoring of regulatory changes. Our compliance team ensures you meet all federal and state reporting obligations.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'How quickly can I get a quote?',
+                name: 'Can you manage our open enrollment process?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'In most cases, we can provide an initial quote within 24 hours of receiving your completed information. For more complex accounts or large fleets, the process may take slightly longer to ensure we explore the best options across our carrier network.',
+                  text: 'Yes. We handle every aspect of open enrollment from timeline planning and employee communication materials to benefits fairs, enrollment platform setup, and post-enrollment reconciliation. Our goal is to make enrollment seamless for both HR teams and employees.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Do you offer cargo and physical damage coverage?',
+                name: "What's the difference between fully insured and self-funded?",
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes. Motor truck cargo coverage protects the goods you haul, while physical damage coverage protects your trucks and trailers. We can tailor both coverages to your specific cargo types, vehicle values, and deductible preferences.',
+                  text: 'With fully insured plans, you pay a fixed premium to a carrier who assumes all claims risk. Self-funded plans mean your company pays claims directly, typically with stop-loss insurance to cap catastrophic exposure. We also offer level-funded arrangements that combine the predictability of fully insured with the cost savings potential of self-funding.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Can coverage be customized for my operation?',
+                name: 'Do you offer benefits for small businesses under 50 employees?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Every policy we place is built around your specific operation. We consider your equipment, routes, cargo types, loss history, and business goals to design a program that provides the right coverage at a competitive price — not a generic package.',
+                  text: 'Yes. We specialize in helping small businesses access competitive benefits packages that rival larger employers. Through our carrier relationships and group purchasing strategies, we help small employers offer attractive medical, dental, vision, and ancillary benefits that support recruitment and retention.',
                 },
               },
             ],

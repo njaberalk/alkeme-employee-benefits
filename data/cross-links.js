@@ -1,54 +1,56 @@
 // Cross-linking maps for dense internal linking
-// Coverage → which industries commonly need this coverage
+// Benefit line → which industries commonly need this benefit
 export const coverageToIndustries = {
-  'auto-liability': ['owner-operators', 'small-fleets', 'large-fleets', 'hot-shot-trucking'],
-  'physical-damage': ['owner-operators', 'small-fleets', 'large-fleets', 'flatbed'],
-  'motor-truck-cargo': ['owner-operators', 'refrigerated', 'flatbed', 'hazmat'],
-  'general-liability': ['large-fleets', 'ltl-last-mile', 'intermodal'],
-  'non-trucking-liability': ['owner-operators', 'hot-shot-trucking'],
-  'trailer-interchange': ['intermodal', 'ltl-last-mile', 'large-fleets'],
-  'workers-compensation': ['small-fleets', 'large-fleets', 'ltl-last-mile'],
-  'umbrella-excess-liability': ['large-fleets', 'hazmat', 'car-haulers'],
-  'occupational-accident': ['owner-operators', 'hot-shot-trucking', 'small-fleets'],
+  'group-health-insurance': ['small-business', 'mid-market', 'large-employers', 'technology-companies'],
+  'dental-insurance': ['small-business', 'mid-market', 'professional-services', 'manufacturing'],
+  'vision-insurance': ['technology-companies', 'professional-services', 'manufacturing', 'healthcare-employers'],
+  'life-insurance': ['large-employers', 'manufacturing', 'construction-trades', 'nonprofits'],
+  'disability-insurance': ['manufacturing', 'construction-trades', 'healthcare-employers', 'retail-hospitality'],
+  'retirement-plans': ['professional-services', 'technology-companies', 'mid-market', 'large-employers'],
+  'executive-benefits': ['large-employers', 'professional-services', 'technology-companies', 'healthcare-employers'],
+  'voluntary-benefits': ['retail-hospitality', 'manufacturing', 'small-business', 'construction-trades'],
+  'wellness-programs': ['technology-companies', 'healthcare-employers', 'large-employers', 'professional-services'],
+  'compliance-administration': ['large-employers', 'mid-market', 'healthcare-employers', 'manufacturing'],
 };
 
-// Coverage → which resources are most relevant
+// Benefit line → which resources are most relevant
 export const coverageToResources = {
-  'auto-liability': ['fmcsa-insurance-requirements', 'trucking-insurance-cost', 'new-authority-insurance'],
-  'physical-damage': ['trucking-insurance-cost', 'lower-trucking-insurance-premiums'],
-  'motor-truck-cargo': ['fmcsa-insurance-requirements', 'trucking-insurance-cost'],
-  'general-liability': ['commercial-auto-vs-trucking-insurance', 'trucking-insurance-glossary'],
-  'non-trucking-liability': ['primary-vs-non-trucking-liability', 'trucking-insurance-glossary'],
-  'trailer-interchange': ['fmcsa-insurance-requirements', 'trucking-insurance-glossary'],
-  'workers-compensation': ['occupational-accident-vs-workers-comp', 'trucking-insurance-cost'],
-  'umbrella-excess-liability': ['trucking-insurance-cost', 'trucking-insurance-claims-guide'],
-  'occupational-accident': ['occupational-accident-vs-workers-comp', 'new-authority-insurance'],
+  'group-health-insurance': ['employee-benefits-cost', 'self-funding-guide', 'aca-compliance-guide'],
+  'dental-insurance': ['employee-benefits-cost', 'open-enrollment-guide', 'benefits-benchmarking'],
+  'vision-insurance': ['employee-benefits-cost', 'open-enrollment-guide', 'benefits-benchmarking'],
+  'life-insurance': ['employee-benefits-cost', 'employee-benefits-glossary'],
+  'disability-insurance': ['employee-benefits-cost', 'employee-benefits-glossary'],
+  'retirement-plans': ['employee-benefits-cost', 'section-125-cafeteria-plans', 'hsa-vs-fsa-guide'],
+  'executive-benefits': ['employee-benefits-cost', 'benefits-benchmarking'],
+  'voluntary-benefits': ['employee-benefits-cost', 'open-enrollment-guide', 'benefits-benchmarking'],
+  'wellness-programs': ['benefits-benchmarking', 'employee-benefits-cost'],
+  'compliance-administration': ['aca-compliance-guide', 'cobra-guide', 'section-125-cafeteria-plans'],
 };
 
 // Industry → top states for that industry
 export const industryToStates = {
-  'owner-operators': ['texas', 'california', 'florida', 'georgia', 'ohio'],
-  'small-fleets': ['texas', 'illinois', 'california', 'pennsylvania', 'ohio'],
-  'large-fleets': ['texas', 'california', 'illinois', 'indiana', 'tennessee'],
-  'hot-shot-trucking': ['texas', 'oklahoma', 'louisiana', 'north-dakota', 'colorado'],
-  'ltl-last-mile': ['california', 'texas', 'new-york', 'illinois', 'florida'],
-  'intermodal': ['illinois', 'california', 'new-jersey', 'georgia', 'texas'],
-  'refrigerated': ['california', 'florida', 'texas', 'washington', 'arizona'],
-  'flatbed': ['texas', 'pennsylvania', 'ohio', 'indiana', 'north-carolina'],
-  'hazmat': ['texas', 'louisiana', 'new-jersey', 'ohio', 'california'],
-  'car-haulers': ['michigan', 'texas', 'georgia', 'california', 'indiana'],
+  'small-business': ['california', 'texas', 'florida', 'new-york', 'illinois'],
+  'mid-market': ['california', 'texas', 'new-york', 'pennsylvania', 'ohio'],
+  'large-employers': ['california', 'new-york', 'texas', 'illinois', 'massachusetts'],
+  'nonprofits': ['new-york', 'california', 'massachusetts', 'illinois', 'washington'],
+  'professional-services': ['new-york', 'california', 'illinois', 'texas', 'massachusetts'],
+  'healthcare-employers': ['california', 'texas', 'florida', 'new-york', 'pennsylvania'],
+  'technology-companies': ['california', 'washington', 'new-york', 'texas', 'massachusetts'],
+  'manufacturing': ['texas', 'ohio', 'michigan', 'indiana', 'illinois'],
+  'retail-hospitality': ['california', 'texas', 'florida', 'new-york', 'nevada'],
+  'construction-trades': ['texas', 'california', 'florida', 'new-york', 'ohio'],
 };
 
 // Industry → relevant resources
 export const industryToResources = {
-  'owner-operators': ['trucking-insurance-cost', 'new-authority-insurance', 'occupational-accident-vs-workers-comp'],
-  'small-fleets': ['trucking-insurance-cost', 'lower-trucking-insurance-premiums', 'fmcsa-insurance-requirements'],
-  'large-fleets': ['lower-trucking-insurance-premiums', 'trucking-insurance-claims-guide', 'fmcsa-insurance-requirements'],
-  'hot-shot-trucking': ['new-authority-insurance', 'trucking-insurance-cost', 'fmcsa-insurance-requirements'],
-  'ltl-last-mile': ['trucking-insurance-cost', 'commercial-auto-vs-trucking-insurance'],
-  'intermodal': ['fmcsa-insurance-requirements', 'trucking-insurance-glossary'],
-  'refrigerated': ['trucking-insurance-cost', 'trucking-insurance-claims-guide'],
-  'flatbed': ['trucking-insurance-cost', 'lower-trucking-insurance-premiums'],
-  'hazmat': ['fmcsa-insurance-requirements', 'trucking-insurance-cost'],
-  'car-haulers': ['trucking-insurance-cost', 'lower-trucking-insurance-premiums'],
+  'small-business': ['employee-benefits-cost', 'open-enrollment-guide', 'aca-compliance-guide'],
+  'mid-market': ['self-funding-guide', 'benefits-benchmarking', 'aca-compliance-guide'],
+  'large-employers': ['self-funding-guide', 'benefits-benchmarking', 'aca-compliance-guide'],
+  'nonprofits': ['employee-benefits-cost', 'section-125-cafeteria-plans', 'open-enrollment-guide'],
+  'professional-services': ['benefits-benchmarking', 'hsa-vs-fsa-guide', 'employee-benefits-cost'],
+  'healthcare-employers': ['aca-compliance-guide', 'self-funding-guide', 'benefits-benchmarking'],
+  'technology-companies': ['benefits-benchmarking', 'hsa-vs-fsa-guide', 'employee-benefits-cost'],
+  'manufacturing': ['aca-compliance-guide', 'cobra-guide', 'employee-benefits-cost'],
+  'retail-hospitality': ['aca-compliance-guide', 'employee-benefits-cost', 'open-enrollment-guide'],
+  'construction-trades': ['employee-benefits-cost', 'aca-compliance-guide', 'cobra-guide'],
 };
