@@ -67,7 +67,21 @@ export default function Hero() {
               transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
             }}
           >
-            Comprehensive employee benefits programs designed to attract talent, retain your team, and keep your workforce healthy and engaged.
+            Employee benefits for employers of all sizes. We handle group health, dental, vision, retirement, and compliance — across all 50 states.
+          </p>
+
+          <p
+            className="text-cream/80 mb-8"
+            style={{
+              fontSize: '0.95rem',
+              lineHeight: '1.6',
+              maxWidth: '550px',
+              opacity: loaded ? 1 : 0,
+              transform: loaded ? 'translateY(0)' : 'translateY(20px)',
+              transition: 'opacity 0.6s ease 0.38s, transform 0.6s ease 0.38s',
+            }}
+          >
+            ALKEME Insurance Services provides employee benefits consulting including group health insurance, dental, vision, life and disability coverage, retirement plans, and compliance administration for employers of all sizes across all 50 states.
           </p>
 
           <div

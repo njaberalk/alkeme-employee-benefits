@@ -30,6 +30,22 @@ export default function HomePage() {
               name: 'ALKEME Insurance Services',
               url: 'https://alkemeins.com',
             },
+            foundingDate: '2003',
+            numberOfEmployees: {
+              '@type': 'QuantitativeValue',
+              value: 100,
+            },
+            knowsAbout: [
+              'Employee Benefits',
+              'Group Health Insurance',
+              'Retirement Plans',
+              'ACA Compliance',
+            ],
+            hasCredential: {
+              '@type': 'EducationalOccupationalCredential',
+              credentialCategory: 'Professional License',
+              name: 'Licensed Insurance Brokerage',
+            },
             serviceType: [
               'Employee Benefits Consulting',
               'Group Health Insurance',
@@ -99,6 +115,28 @@ export default function HomePage() {
                 },
               },
             ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Employee Benefits Solutions',
+            datePublished: '2025-06-01',
+            dateModified: '2026-04-01',
+            author: {
+              '@type': 'Organization',
+              name: 'ALKEME Insurance Services',
+              url: 'https://alkemeins.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'ALKEME Insurance Services',
+              url: 'https://alkemeins.com',
+            },
           }),
         }}
       />
