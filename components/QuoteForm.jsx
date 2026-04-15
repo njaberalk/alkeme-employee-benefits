@@ -62,6 +62,7 @@ export default function QuoteForm() {
               alt="Employee benefits consultant meeting with HR team to discuss benefits strategy"
               width={800}
               height={600}
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
               style={{ filter: 'grayscale(100%)' }}
             />
