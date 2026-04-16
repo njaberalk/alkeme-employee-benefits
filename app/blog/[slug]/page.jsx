@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
-    title: post.metaTitle,
+    title: post.metaTitle.replace(/ \| ALKEME Insurance Services$/i, ''),
     description: post.metaDescription,
     alternates: {
       canonical: `https://alkemeins.com/employee-benefits/blog/${post.slug}/`,

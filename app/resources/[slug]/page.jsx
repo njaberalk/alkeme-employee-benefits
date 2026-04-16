@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const resource = getResourceBySlug(slug);
   if (!resource) return {};
   return {
-    title: resource.metaTitle,
+    title: resource.metaTitle.replace(/ \| ALKEME Insurance Services$/i, ''),
     description: resource.metaDescription,
     alternates: {
       canonical: `https://alkemeins.com/employee-benefits/resources/${resource.slug}/`,

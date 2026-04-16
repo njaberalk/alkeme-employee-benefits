@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const industry = getIndustryBySlug(slug);
   if (!industry) return {};
   return {
-    title: industry.metaTitle,
+    title: industry.metaTitle.replace(/ \| ALKEME Insurance Services$/i, ''),
     description: industry.metaDescription,
     alternates: {
       canonical: `https://alkemeins.com/employee-benefits/industries/${industry.slug}/`,
