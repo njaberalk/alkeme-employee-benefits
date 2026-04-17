@@ -2,9 +2,9 @@ export const resources = [
   {
     slug: 'employee-benefits-cost',
     title: 'How Much Do Employee Benefits Cost?',
-    metaTitle: 'How Much Do Employee Benefits Cost? | ALKEME Insurance Services',
+    metaTitle: 'How Much Do Employee Benefits Cost?',
     metaDescription:
-      'Understand average employee benefits costs per employee, benchmarking data by company size and industry, and strategies for controlling your total benefits spend.',
+      'Understand average employee benefits costs per employee, benchmarking data by company size and industry, and strategies for controlling your total benefits.',
     category: 'Guide',
     heroHeading: 'How Much Do Employee Benefits Cost?',
     heroSubheading:
@@ -71,7 +71,7 @@ export const resources = [
   {
     slug: 'aca-compliance-guide',
     title: 'ACA Compliance Guide for Employers',
-    metaTitle: 'ACA Compliance Guide for Employers | ALKEME Insurance Services',
+    metaTitle: 'ACA Compliance Guide for Employers',
     metaDescription:
       'Navigate Affordable Care Act compliance with guidance on ALE determination, 1094/1095 reporting, affordability safe harbors, and penalty avoidance strategies.',
     category: 'Guide',
@@ -138,9 +138,9 @@ export const resources = [
   {
     slug: 'open-enrollment-guide',
     title: 'Open Enrollment Planning Guide',
-    metaTitle: 'Open Enrollment Planning Guide | ALKEME Insurance Services',
+    metaTitle: 'Open Enrollment Planning Guide',
     metaDescription:
-      'Plan a successful open enrollment with timelines, communication strategies, decision support tools, and best practices for maximizing employee participation and satisfaction.',
+      'Plan a successful open enrollment with timelines, communication strategies, decision support tools, and best practices for maximizing employee participation.',
     category: 'Guide',
     heroHeading: 'Open Enrollment Planning Guide',
     heroSubheading:
@@ -203,7 +203,7 @@ export const resources = [
   {
     slug: 'cobra-guide',
     title: 'COBRA Continuation Coverage Guide',
-    metaTitle: 'COBRA Continuation Coverage Guide | ALKEME Insurance Services',
+    metaTitle: 'COBRA Continuation Coverage Guide',
     metaDescription:
       'Understand COBRA requirements including qualifying events, notice obligations, premium calculations, election periods, and employer compliance responsibilities.',
     category: 'Guide',
@@ -272,7 +272,7 @@ export const resources = [
   {
     slug: 'benefits-benchmarking',
     title: 'Employee Benefits Benchmarking Guide',
-    metaTitle: 'Employee Benefits Benchmarking Guide | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits Benchmarking Guide',
     metaDescription:
       'Learn how to compare your employee benefits package to industry standards using benchmarking data, peer comparisons, and total rewards analysis frameworks.',
     category: 'Guide',
@@ -338,9 +338,9 @@ export const resources = [
   {
     slug: 'section-125-cafeteria-plans',
     title: 'Section 125 Cafeteria Plans Explained',
-    metaTitle: 'Section 125 Cafeteria Plans Explained | ALKEME Insurance Services',
+    metaTitle: 'Section 125 Cafeteria Plans Explained',
     metaDescription:
-      'Understand Section 125 cafeteria plans including pre-tax premium deductions, FSAs, HSAs, dependent care accounts, and premium-only plans for employer tax savings.',
+      'Understand Section 125 cafeteria plans including pre-tax premium deductions, FSAs, HSAs, dependent care accounts, and premium-only plans for employer tax.',
     category: 'Guide',
     heroHeading: 'Section 125 Cafeteria Plans Explained',
     heroSubheading:
@@ -407,9 +407,9 @@ export const resources = [
   {
     slug: 'hsa-vs-fsa-guide',
     title: 'HSA vs. FSA: Which Is Right for Your Employees?',
-    metaTitle: 'HSA vs. FSA: Which Is Right for Your Employees? | ALKEME Insurance Services',
+    metaTitle: 'HSA vs. FSA: Which Is Right for Your Employees?',
     metaDescription:
-      'Compare health savings accounts and flexible spending accounts including eligibility rules, contribution limits, investment options, rollover rules, and employer strategies.',
+      'Compare health savings accounts and flexible spending accounts including eligibility rules, contribution limits, investment options, rollover rules, and.',
     category: 'Comparison',
     heroHeading: 'HSA vs. FSA: Which Is Right for Your Employees?',
     heroSubheading:
@@ -476,9 +476,9 @@ export const resources = [
   {
     slug: 'self-funding-guide',
     title: 'Self-Funded Health Plans: A Complete Guide',
-    metaTitle: 'Self-Funded Health Plans: A Complete Guide | ALKEME Insurance Services',
+    metaTitle: 'Self-Funded Health Plans: A Complete Guide',
     metaDescription:
-      'Explore self-funding for your health plan including level-funded vs fully insured comparisons, stop-loss insurance, TPA selection, and cost management strategies.',
+      'Explore self-funding for your health plan including level-funded vs fully insured comparisons, stop-loss insurance, TPA selection, and cost management.',
     category: 'Guide',
     heroHeading: 'Self-Funded Health Plans: A Complete Guide',
     heroSubheading:
@@ -540,7 +540,7 @@ export const resources = [
   {
     slug: 'employee-benefits-glossary',
     title: 'Employee Benefits Glossary',
-    metaTitle: 'Employee Benefits Glossary | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits Glossary',
     metaDescription:
       'A comprehensive glossary of 50+ employee benefits terms including definitions for coinsurance, deductible, QSEHRA, COBRA, ACA, FSA, HSA, and more.',
     category: 'Reference',

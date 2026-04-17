@@ -424,7 +424,7 @@ export const citiesPart1 = [
     stateSlug: 'washington',
     abbreviation: 'DC',
     metaTitle: 'Employee Benefits in Washington, DC',
-    metaDescription: 'Employee benefits solutions for Washington, DC employers. Health insurance, retirement plans, and competitive benefits for federal contractors and private employers.',
+    metaDescription: 'Employee benefits solutions for Washington, DC employers.',
     heroHeading: 'Washington DC Employee Benefits',
     heroSubheading: 'Benefits packages for employers in the nation\'s capital.',
     overview: 'Washington, DC is dominated by the federal government, government contractors, nonprofits, and professional services. The high cost of living and competition with federal employee benefits (FEHB) create a uniquely demanding market for private-sector employer benefits.',

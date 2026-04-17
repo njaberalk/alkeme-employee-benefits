@@ -2,7 +2,7 @@ export const coverages = [
   {
     slug: "group-health-insurance",
     title: "Group Health Insurance",
-    metaTitle: "Group Health Insurance for Employers | ALKEME Insurance Services",
+    metaTitle: "Group Health Insurance for Employers",
     metaDescription:
       "Employer-sponsored group health insurance plans including PPO, HMO, EPO, and HDHP options. ALKEME helps businesses design competitive medical benefits.",
     heroHeading: "Group Health Insurance",
@@ -67,7 +67,7 @@ export const coverages = [
   {
     slug: "dental-insurance",
     title: "Dental Insurance",
-    metaTitle: "Dental Insurance for Employers | ALKEME Insurance Services",
+    metaTitle: "Dental Insurance for Employers",
     metaDescription:
       "Group dental insurance plans covering preventive, basic, and major services. ALKEME helps employers design dental benefits that employees value.",
     heroHeading: "Dental Insurance",
@@ -131,7 +131,7 @@ export const coverages = [
   {
     slug: "vision-insurance",
     title: "Vision Insurance",
-    metaTitle: "Vision Insurance for Employers | ALKEME Insurance Services",
+    metaTitle: "Vision Insurance for Employers",
     metaDescription:
       "Group vision insurance covering eye exams, prescription lenses, frames, and contacts. ALKEME helps employers add affordable vision benefits.",
     heroHeading: "Vision Insurance",
@@ -191,7 +191,7 @@ export const coverages = [
   {
     slug: "life-insurance",
     title: "Life Insurance",
-    metaTitle: "Life Insurance for Employers | ALKEME Insurance Services",
+    metaTitle: "Life Insurance for Employers",
     metaDescription:
       "Group term life, AD&D, voluntary life, and key person insurance. ALKEME designs life insurance programs that protect employees and businesses.",
     heroHeading: "Life Insurance",
@@ -256,9 +256,9 @@ export const coverages = [
   {
     slug: "disability-insurance",
     title: "Disability Insurance",
-    metaTitle: "Disability Insurance for Employers | ALKEME Insurance Services",
+    metaTitle: "Disability Insurance for Employers",
     metaDescription:
-      "Short-term and long-term disability insurance for employers. ALKEME designs income protection plans that keep employees financially secure during illness or injury.",
+      "Short-term and long-term disability insurance for employers.",
     heroHeading: "Disability Insurance",
     heroSubheading:
       "Protect your employees' income when illness or injury prevents them from working. ALKEME designs short-term and long-term disability programs that provide meaningful income replacement and support return-to-work outcomes.",
@@ -322,9 +322,9 @@ export const coverages = [
   {
     slug: "retirement-plans",
     title: "Retirement Plans",
-    metaTitle: "Retirement Plans for Employers | ALKEME Insurance Services",
+    metaTitle: "Retirement Plans for Employers",
     metaDescription:
-      "401(k), 403(b), profit sharing, and defined benefit retirement plans. ALKEME helps employers design tax-advantaged retirement benefits that attract and retain talent.",
+      "401(k), 403(b), profit sharing, and defined benefit retirement plans.",
     heroHeading: "Retirement Plans",
     heroSubheading:
       "Build a retirement benefits program that helps employees achieve financial security while giving your business valuable tax advantages. ALKEME advises on plan design, provider selection, and fiduciary compliance.",
@@ -388,9 +388,9 @@ export const coverages = [
   {
     slug: "executive-benefits",
     title: "Executive Benefits",
-    metaTitle: "Executive Benefits for Employers | ALKEME Insurance Services",
+    metaTitle: "Executive Benefits for Employers",
     metaDescription:
-      "Deferred compensation, SERP, key person insurance, and executive bonus plans. ALKEME designs executive benefit strategies that recruit and retain top leadership.",
+      "Deferred compensation, SERP, key person insurance, and executive bonus plans.",
     heroHeading: "Executive Benefits",
     heroSubheading:
       "Attract, retain, and reward your organization's senior leadership with executive benefit strategies that go beyond standard group plans. ALKEME designs customized programs that align executive interests with business performance.",
@@ -449,9 +449,9 @@ export const coverages = [
   {
     slug: "voluntary-benefits",
     title: "Voluntary Benefits",
-    metaTitle: "Voluntary Benefits for Employers | ALKEME Insurance Services",
+    metaTitle: "Voluntary Benefits for Employers",
     metaDescription:
-      "Accident, critical illness, hospital indemnity, pet insurance, and legal plans. ALKEME helps employers enhance benefits packages with employee-funded voluntary options.",
+      "Accident, critical illness, hospital indemnity, pet insurance, and legal plans.",
     heroHeading: "Voluntary Benefits",
     heroSubheading:
       "Expand your benefits offering without increasing employer costs by providing employees access to valuable supplemental coverages at group rates. ALKEME curates voluntary benefit portfolios tailored to your workforce demographics.",
@@ -515,9 +515,9 @@ export const coverages = [
   {
     slug: "wellness-programs",
     title: "Wellness Programs",
-    metaTitle: "Wellness Programs for Employers | ALKEME Insurance Services",
+    metaTitle: "Wellness Programs for Employers",
     metaDescription:
-      "Employee wellness programs including EAP, mental health, fitness reimbursement, biometric screening, and telehealth. ALKEME builds wellness strategies that reduce costs.",
+      "Employee wellness programs including EAP, mental health, fitness reimbursement, biometric screening, and telehealth.",
     heroHeading: "Wellness Programs",
     heroSubheading:
       "Invest in your employees' physical, mental, and financial wellbeing with a comprehensive wellness strategy. ALKEME designs programs that improve health outcomes, reduce claims costs, and strengthen workplace culture.",
@@ -583,9 +583,9 @@ export const coverages = [
     slug: "compliance-administration",
     title: "Compliance & Administration",
     metaTitle:
-      "Benefits Compliance & Administration for Employers | ALKEME Insurance Services",
+      "Benefits Compliance & Administration for Employers",
     metaDescription:
-      "ACA reporting, ERISA compliance, COBRA administration, and Section 125 cafeteria plans. ALKEME ensures your employee benefits program meets all regulatory requirements.",
+      "ACA reporting, ERISA compliance, COBRA administration, and Section 125 cafeteria plans.",
     heroHeading: "Compliance & Administration",
     heroSubheading:
       "Navigate the complex regulatory landscape of employee benefits with confidence. ALKEME provides expert compliance guidance on ACA, ERISA, COBRA, HIPAA, and Section 125 requirements to protect your organization from penalties and litigation.",

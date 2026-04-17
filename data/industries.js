@@ -2,9 +2,9 @@ export const industries = [
   {
     slug: 'small-business',
     title: 'Small Business (2-50 Employees)',
-    metaTitle: 'Employee Benefits for Small Businesses | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Small Businesses',
     metaDescription:
-      'Affordable employee benefits solutions for small businesses with 2-50 employees. SHOP marketplace access, simplified administration, and competitive group plans.',
+      'Affordable employee benefits solutions for small businesses with 2-50 employees.',
     heroHeading: 'Employee Benefits Built for Small Businesses',
     heroSubheading:
       'Attract and retain top talent with affordable, professionally managed benefits programs designed for companies with 2 to 50 employees.',
@@ -68,7 +68,7 @@ export const industries = [
   {
     slug: 'mid-market',
     title: 'Mid-Market Employers (51-250 Employees)',
-    metaTitle: 'Employee Benefits for Mid-Market Employers | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Mid-Market Employers',
     metaDescription:
       'Tailored employee benefits strategies for mid-market companies with 51-250 employees. Self-funding options, custom plan design, and data-driven cost management.',
     heroHeading: 'Strategic Benefits for Growing Mid-Market Companies',
@@ -132,9 +132,9 @@ export const industries = [
   {
     slug: 'large-employers',
     title: 'Large Employers (250+ Employees)',
-    metaTitle: 'Employee Benefits for Large Employers | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Large Employers',
     metaDescription:
-      'Enterprise employee benefits consulting for large employers with 250+ employees. Complex plan structures, multi-state compliance, and population health management.',
+      'Enterprise employee benefits consulting for large employers with 250+ employees.',
     heroHeading: 'Enterprise Benefits Strategy for Large Employers',
     heroSubheading:
       'Manage complex, multi-state benefits programs with the strategic depth, analytical rigor, and hands-on support that large organizations demand.',
@@ -200,9 +200,9 @@ export const industries = [
   {
     slug: 'nonprofits',
     title: 'Nonprofit Organizations',
-    metaTitle: 'Employee Benefits for Nonprofits | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Nonprofits',
     metaDescription:
-      'Mission-aligned employee benefits for nonprofit organizations. 403(b) retirement plans, budget-sensitive health coverage, and wellness programs for purpose-driven teams.',
+      'Mission-aligned employee benefits for nonprofit organizations.',
     heroHeading: 'Mission-Aligned Benefits for Nonprofit Organizations',
     heroSubheading:
       'Maximize the impact of every benefits dollar with programs designed for the unique financial realities and workforce culture of nonprofit employers.',
@@ -262,7 +262,7 @@ export const industries = [
   {
     slug: 'professional-services',
     title: 'Professional Services',
-    metaTitle: 'Employee Benefits for Professional Services Firms | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Professional Services Firms',
     metaDescription:
       'Competitive employee benefits for law firms, accounting firms, and consulting practices. Attract elite talent with premium health plans and executive packages.',
     heroHeading: 'Premium Benefits for Professional Services Firms',
@@ -324,9 +324,9 @@ export const industries = [
   {
     slug: 'healthcare-employers',
     title: 'Healthcare Employers',
-    metaTitle: 'Employee Benefits for Healthcare Employers | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Healthcare Employers',
     metaDescription:
-      'Specialized employee benefits for hospitals, clinics, and healthcare organizations. Address clinical workforce retention, burnout prevention, and unique coverage needs.',
+      'Specialized employee benefits for hospitals, clinics, and healthcare organizations.',
     heroHeading: 'Employee Benefits for Healthcare Organizations',
     heroSubheading:
       'Support the people who care for others with benefits programs designed for the unique demands, regulations, and workforce challenges of the healthcare industry.',
@@ -387,9 +387,9 @@ export const industries = [
   {
     slug: 'technology-companies',
     title: 'Technology Companies',
-    metaTitle: 'Employee Benefits for Technology Companies | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Technology Companies',
     metaDescription:
-      'Innovative employee benefits for tech companies and startups. Competitive perks, remote workforce coverage, equity-adjacent benefits, and modern wellness programs.',
+      'Innovative employee benefits for tech companies and startups.',
     heroHeading: 'Forward-Thinking Benefits for Technology Companies',
     heroSubheading:
       'Win the talent war with benefits programs that reflect the innovation, flexibility, and competitive intensity that define the technology industry.',
@@ -451,9 +451,9 @@ export const industries = [
   {
     slug: 'manufacturing',
     title: 'Manufacturing',
-    metaTitle: 'Employee Benefits for Manufacturing Companies | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Manufacturing Companies',
     metaDescription:
-      'Employee benefits designed for manufacturing workforces. Safety-integrated wellness, shift worker coverage, union benefit coordination, and industrial workforce retention.',
+      'Employee benefits designed for manufacturing workforces.',
     heroHeading: 'Employee Benefits Built for Manufacturing',
     heroSubheading:
       'Support your production workforce with benefits programs that address the physical demands, safety culture, and workforce structure of modern manufacturing.',
@@ -514,9 +514,9 @@ export const industries = [
   {
     slug: 'retail-hospitality',
     title: 'Retail & Hospitality',
-    metaTitle: 'Employee Benefits for Retail & Hospitality | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Retail & Hospitality',
     metaDescription:
-      'Employee benefits solutions for retail and hospitality employers. Address high turnover, part-time eligibility, seasonal workforce coverage, and competitive hourly packages.',
+      'Employee benefits solutions for retail and hospitality employers.',
     heroHeading: 'Employee Benefits for Retail and Hospitality',
     heroSubheading:
       'Reduce turnover and build a more engaged workforce with benefits programs designed for the realities of retail and hospitality operations.',
@@ -576,9 +576,9 @@ export const industries = [
   {
     slug: 'construction-trades',
     title: 'Construction & Trades',
-    metaTitle: 'Employee Benefits for Construction & Trades | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits for Construction & Trades',
     metaDescription:
-      'Employee benefits for construction companies and skilled trades. Prevailing wage compliance, multi-employer trust navigation, and field workforce benefits solutions.',
+      'Employee benefits for construction companies and skilled trades.',
     heroHeading: 'Employee Benefits for Construction and the Skilled Trades',
     heroSubheading:
       'Build a competitive benefits program that helps you recruit skilled tradespeople, comply with prevailing wage requirements, and manage multi-employer trust obligations.',

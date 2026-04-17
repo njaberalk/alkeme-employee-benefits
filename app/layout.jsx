@@ -14,10 +14,10 @@ const poppins = Poppins({
 export const metadata = {
   metadataBase: new URL('https://alkemeins.com/employee-benefits'),
   title: {
-    template: '%s | ALKEME Insurance Services',
-    default: 'Employee Benefits | ALKEME Insurance Services',
+    template: '%s | ALKEME',
+    default: 'Employee Benefits | ALKEME',
   },
-  description: 'ALKEME Insurance Services provides comprehensive employee benefits consulting, plan design, and administration for employers of all sizes. Group health, dental, vision, retirement, and more.',
+  description: 'Comprehensive employee benefits from ALKEME — plan design and admin for employers of all sizes. Group health, dental, vision, retirement, and more.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Employee Benefits | ALKEME Insurance Services',
+    title: 'Employee Benefits | ALKEME',
     description: 'Comprehensive employee benefits consulting for employers of all sizes across all 50 states.',
     images: ['https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&h=630&q=80'],
   },

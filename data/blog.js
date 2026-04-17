@@ -2,9 +2,9 @@ export const blogPosts = [
   {
     slug: 'benefits-trends-2026',
     title: 'Employee Benefits Trends for 2026: What Employers Need to Know',
-    metaTitle: 'Employee Benefits Trends for 2026 | ALKEME Insurance Services',
+    metaTitle: 'Employee Benefits Trends for 2026',
     metaDescription:
-      'Explore the top employee benefits trends for 2026 including rising healthcare costs, emerging benefit types, and strategies employers are using to stay competitive in a tight labor market.',
+      'Explore the top employee benefits trends for 2026 including rising healthcare costs, emerging benefit types, and strategies employers are using to stay.',
     category: 'Trends',
     publishDate: '2026-03-10',
     heroHeading: 'Employee Benefits Trends for 2026',
@@ -62,9 +62,9 @@ export const blogPosts = [
   {
     slug: 'open-enrollment-mistakes',
     title: '7 Open Enrollment Mistakes That Cost Employers Time and Money',
-    metaTitle: '7 Open Enrollment Mistakes That Cost Employers | ALKEME Insurance Services',
+    metaTitle: '7 Open Enrollment Mistakes That Cost Employers',
     metaDescription:
-      'Avoid the most common open enrollment mistakes that lead to compliance issues, employee confusion, and wasted benefits spending. Learn how to run a smoother enrollment season.',
+      'Avoid the most common open enrollment mistakes that lead to compliance issues, employee confusion, and wasted benefits spending.',
     category: 'Tips & Advice',
     publishDate: '2026-03-24',
     heroHeading: 'Open Enrollment Mistakes That Cost Employers',
@@ -122,9 +122,9 @@ export const blogPosts = [
   {
     slug: 'mental-health-benefits-workplace',
     title: 'The ROI of Mental Health Benefits in the Workplace',
-    metaTitle: 'The ROI of Mental Health Benefits in the Workplace | ALKEME Insurance Services',
+    metaTitle: 'The ROI of Mental Health Benefits in the Workplace',
     metaDescription:
-      'Learn how investing in mental health benefits including EAP programs, therapy coverage, and wellness initiatives delivers measurable returns through reduced absenteeism and higher productivity.',
+      'Learn how investing in mental health benefits including EAP programs, therapy coverage, and wellness initiatives delivers measurable returns through reduced.',
     category: 'Industry Insights',
     publishDate: '2026-03-31',
     heroHeading: 'The ROI of Mental Health Benefits',
@@ -182,9 +182,9 @@ export const blogPosts = [
   {
     slug: 'remote-worker-benefits',
     title: 'Benefits for Remote Workers: Compliance, Coverage, and Best Practices',
-    metaTitle: 'Benefits for Remote Workers: Compliance & Coverage | ALKEME Insurance Services',
+    metaTitle: 'Benefits for Remote Workers: Compliance & Coverage',
     metaDescription:
-      'Navigate the complexities of providing employee benefits to a remote workforce including multi-state compliance, virtual-first health plans, and home office stipends.',
+      'Navigate the complexities of providing employee benefits to a remote workforce including multi-state compliance, virtual-first health plans, and home office.',
     category: 'HR Strategy',
     publishDate: '2026-04-07',
     heroHeading: 'Benefits for Remote Workers',
@@ -242,9 +242,9 @@ export const blogPosts = [
   {
     slug: 'controlling-healthcare-costs',
     title: 'Strategies for Controlling Employer Healthcare Costs in 2026',
-    metaTitle: 'Strategies for Controlling Employer Healthcare Costs | ALKEME Insurance Services',
+    metaTitle: 'Strategies for Controlling Employer Healthcare Costs',
     metaDescription:
-      'Discover proven strategies for managing rising employer healthcare costs including plan design optimization, pharmacy benefit management, and alternative funding arrangements.',
+      'Discover proven strategies for managing rising employer healthcare costs including plan design optimization, pharmacy benefit management, and alternative.',
     category: 'Industry Insights',
     publishDate: '2026-04-14',
     heroHeading: 'Controlling Employer Healthcare Costs',
@@ -302,9 +302,9 @@ export const blogPosts = [
   {
     slug: 'voluntary-benefits-roi',
     title: 'Why Voluntary Benefits Improve Recruitment and Retention',
-    metaTitle: 'Why Voluntary Benefits Improve Recruitment and Retention | ALKEME Insurance Services',
+    metaTitle: 'Why Voluntary Benefits Improve Recruitment and Retention',
     metaDescription:
-      'Discover how voluntary benefits like accident insurance, critical illness, and lifestyle perks help employers attract talent and reduce turnover at minimal cost to the organization.',
+      'Discover how voluntary benefits like accident insurance, critical illness, and lifestyle perks help employers attract talent and reduce turnover at minimal.',
     category: 'HR Strategy',
     publishDate: '2026-04-21',
     heroHeading: 'The ROI of Voluntary Benefits',
